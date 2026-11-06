@@ -1,12 +1,12 @@
 # Perfil Exportador do Brasil (1995–hoje)
 
-> 🚧 **Projeto em andamento.** Este README é atualizado a cada etapa concluída.
+>  **Projeto em andamento.** Este README é atualizado a cada etapa concluída.
 
 O Brasil deixou de ser um exportador de produtos industriais para se tornar um exportador de commodities? Este projeto investiga, com dados públicos de comércio exterior, como a pauta exportadora brasileira mudou desde 1995. Todo o processo é feito com SQL Server, Python e Power BI.
 
 ---
 
-## 📌 Perguntas de pesquisa
+##  Perguntas de pesquisa
 
 1. Como evoluiu a participação de **produtos básicos (commodities)** e de **produtos industrializados** no total exportado pelo Brasil?
 2. Em que período a mudança se intensificou?
@@ -16,7 +16,7 @@ O Brasil deixou de ser um exportador de produtos industriais para se tornar um e
 
 ---
 
-## 🗺️ Status das etapas
+##  Status das etapas
 
 | # | Etapa | Ferramentas | Status |
 |---|-------|-------------|--------|
@@ -33,7 +33,7 @@ O Brasil deixou de ser um exportador de produtos industriais para se tornar um e
 
 ---
 
-## 🗃️ Fontes de dados (previstas)
+##  Fontes de dados (previstas)
 
 | Fonte | Conteúdo | Uso no projeto |
 |-------|----------|----------------|
@@ -41,11 +41,11 @@ O Brasil deixou de ser um exportador de produtos industriais para se tornar um e
 | Ipeadata / Banco Central | Taxa de câmbio e índices de preços | Variáveis explicativas da regressão |
 | *[a definir]* | Preços internacionais de commodities | Variável explicativa da regressão |
 
-> ⚠️ **Ponto de atenção metodológico:** classificações de produtos mudam ao longo do tempo, e a série detalhada pode não cobrir o período inteiro com a mesma nomenclatura. A compatibilização entre classificações e a definição de "commodity" usada no projeto serão documentadas na etapa 3.
+>  **Ponto de atenção metodológico:** classificações de produtos mudam ao longo do tempo, e a série detalhada pode não cobrir o período inteiro com a mesma nomenclatura. A compatibilização entre classificações e a definição de "commodity" usada no projeto serão documentadas na etapa 3.
 
 ---
 
-## 🏗️ Arquitetura
+##  Arquitetura
 
 ```
 Fontes públicas (Comex Stat, Ipeadata)
@@ -63,7 +63,7 @@ SQL Server: banco "perfil" (tabelas tratadas + views analíticas)
 
 ---
 
-## 📁 Estrutura do repositório (planejada)
+##  Estrutura do repositório (planejada)
 
 ```
 perfil-exportador-brasil/
@@ -80,7 +80,7 @@ perfil-exportador-brasil/
 
 ---
 
-## 🔬 Plano de análise estatística
+##  Plano de análise estatística
 
 - **EDA:** evolução da participação de cada categoria, distribuição dos valores, concentração de produtos e destinos (índice de Herfindahl-Hirschman).
 - **Testes de hipótese:** comparar a participação das commodities entre períodos (por exemplo, antes e depois de meados dos anos 2000) e verificar se a diferença é significativa.
@@ -88,13 +88,13 @@ perfil-exportador-brasil/
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 `SQL Server` · `Python` · `pandas` · `scipy` · `statsmodels` · `matplotlib` · `Power BI` · `DAX` · `Git`
 
 ---
 
-## 📚 Sobre o projeto
+##  Sobre o projeto
 
 Este é o terceiro projeto do meu portfólio de dados e também meu laboratório de estudos: cada etapa aplica um tema que estou aprofundando (SQL, pandas, estatística e DAX). A pergunta vem da minha formação em Ciências Sociais, e o objetivo é respondê-la com dados, e não com impressões.
 
